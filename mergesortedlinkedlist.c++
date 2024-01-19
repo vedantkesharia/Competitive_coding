@@ -46,7 +46,7 @@ void displayLinkedList(ListNode* head) {
 }
 
 int main() {
-    // Example usage of mergeTwoLists
+
     ListNode* list1 = new ListNode(1, new ListNode(3, new ListNode(5)));
     ListNode* list2 = new ListNode(1, new ListNode(2, new ListNode(6)));
 
@@ -58,7 +58,7 @@ int main() {
 
     Solution solution;
 
-    // Merge the two sorted lists
+
     ListNode* mergedList = solution.mergeTwoLists(list1, list2);
 
     cout << "Merged List: ";
