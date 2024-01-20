@@ -4,6 +4,8 @@
         "iostream": "cpp",
         "vector": "cpp",
         "functional": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "new": "cpp",
+        "list": "cpp"
     }
 }

@@ -1,14 +1,22 @@
- // map<string, int> marksMap;
-    
-    // marksMap["Henry"] = 98;
-    // marksMap["Jack"] = 58;
-    // marksMap["Rohan"] = 2;
+    // Example 2
+    ListNode *listA2 = new ListNode(1);
+    listA2->next = new ListNode(9);
+    listA2->next->next = new ListNode(1);
+    listA2->next->next->next = new ListNode(2);
+    listA2->next->next->next->next = new ListNode(4);
 
-    // marksMap.insert({{"Person1",34},{"Person2",76}});
-    // map<string, int> :: iterator itr;
-    // for(itr=marksMap.begin();itr!=marksMap.end();itr++){
-    //     cout<<(*itr).first<<" "<<(*itr).second<<"\n"; //like for first iteration first will fetch us Henry and second will fetch us 98
-    // }
-    // cout<<"The size is: "<<marksMap.size()<<endl;
-    // cout<<"The max size is: "<<marksMap.max_size()<<endl;
-    // cout<<"The empty's return value is: "<<marksMap.empty()<<endl;
+    ListNode *listB2 = new ListNode(3);
+    listB2->next = new ListNode(2);
+    listB2->next->next = new ListNode(4);
+
+    cout << "\nList A: ";
+    displayList(listA2);
+    cout << "List B: ";
+    displayList(listB2);
+
+    ListNode *intersectionNode2 = solution.getIntersectionNode(listA2, listB2);
+
+    if (intersectionNode2 != nullptr)
+        cout << "Intersection Node Value: " << intersectionNode2->val << endl;
+    else
+        cout << "No Intersection" << endl;
