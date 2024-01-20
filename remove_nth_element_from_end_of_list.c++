@@ -21,31 +21,6 @@ struct ListNode
 class Solution
 {
 public:
-//     ListNode *removeNthFromEnd(ListNode *head, int n)
-//     {
-//         ListNode *dummy = new ListNode();
-//         ListNode *temp = dummy;
-//         ListNode *temp1 = head;
-//         ListNode *temp2 = head;
-//         ListNode *temp3;
-//         // temp3 -> next = temp2;
-//          temp3 = dummy;
-//         int length = 0;
-//         while (temp1->next != NULL)
-//         {
-//             temp1 = temp1->next;
-//             length++;
-//         }
-//         int i = 0;
-//         while(i<(length-n)){
-//             temp2 = temp2->next;
-//             temp3 = temp3-> next;
-           
-//         }
-//          temp2-> next = temp3-> next;
-//             delete temp3;
-// return dummy->next;
-//     }
 ListNode *removeNthFromEnd(ListNode *head, int n) {
     ListNode *dummy = new ListNode();
     dummy->next = head;
