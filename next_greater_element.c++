@@ -19,6 +19,7 @@ public:
     vector<int> nextGreaterElement(vector<int> &nums1, vector<int> &nums2)
     {
         // Initializing a vector 'ans' of size n with all elements set to -1
+        
         int n = nums2.size();
         vector<int> ans(n, -1);
 
