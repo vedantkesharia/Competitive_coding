@@ -1,4 +1,4 @@
-#include <bits/stdc++.h> //includes all libraries
+// #include <bits/stdc++.h> //includes all libraries
 #include <iostream>
 #include <vector>
 #include <list>
@@ -371,10 +371,10 @@ int main()
 
     //-------------------------------------------------------------------------------
     // Reference Variable
-    // float x = 455;
-    // float &y = x;
-    // cout<<x<<endl;
-    // cout<<y<<endl;
+    float x = 455;
+    float &y = x;
+    cout<<x<<endl;
+    cout<<y<<endl;
 
     //-------------------------------------------------------------------------------
     // Typecasting
@@ -911,12 +911,12 @@ int main()
     //-------------------------------------------------------------------------------
     // Function Objects(Functors)
     // A function wrapped inside a class so that it is available like an object
-    int arr10[] = {134,32,4,12,540,77};
-    sort(arr10,arr10+6); //sorts in ascending order
-    sort(arr10,arr10+6, greater<int>()); //sorts in decending order
-    for(int i = 0;i<6;i++){
-        cout<<arr10[i]<<endl;
-    }
+    // int arr10[] = {134,32,4,12,540,77};
+    // sort(arr10,arr10+6); //sorts in ascending order
+    // sort(arr10,arr10+6, greater<int>()); //sorts in decending order
+    // for(int i = 0;i<6;i++){
+    //     cout<<arr10[i]<<endl;
+    // }
 
 
     return 0;
