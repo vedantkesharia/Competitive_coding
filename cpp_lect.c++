@@ -567,8 +567,8 @@ int main()
 
     // swapByReference is a call by reference function. It takes two parameters a and b as references using the & symbol. Any changes made to a and b inside the function will directly modify the original variables x and y in the main function because it changes at the place of the addresses. When the values of a and b are swapped, it modifies the values at the memory locations of x and y in the main function. Thus, the original variables x and y are updated with the swapped values.
 
-    // int x = 10, x1 = 40;
-    // int y = 20, y1 = 50;
+    int x = 10, x1 = 40;
+    int y = 20, y1 = 50;
 
     // cout << "Before swapping: x = " << x << ", y = " << y << endl;
 
