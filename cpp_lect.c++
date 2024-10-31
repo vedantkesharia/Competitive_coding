@@ -766,19 +766,19 @@ int main()
     // reserve(newCapacity): Allocates memory for at least newCapacity elements.
     // capacity(): Returns the current capacity.
     // shrink_to_fit(): Reduces capacity to fit the size.
-    // Iterators:
 
+    // Iterators:
     // begin(), end(): Returns iterators to the beginning and end.
     // rbegin(), rend(): Reverse iterators.
-    // Modifiers:
 
+    // Modifiers:
     // assign(first, last): Assigns elements from the range [first, last).
     // assign(count, value): Assigns count copies of value.
     // emplace(), emplace_back(args): Constructs elements in-place.
     // insert(iterator, count, value): Inserts count copies of value.
     // insert(iterator, first, last): Inserts elements from the range [first, last).
-    // Algorithms:
 
+    // Algorithms:
     // std::sort(first, last): Sorts the range.
     // std::find(first, last, value): Finds the first occurrence of value.
 
