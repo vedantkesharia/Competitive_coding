@@ -800,9 +800,9 @@ int main()
     // // vec1.pop_back();
     // display1(vec1);
     // vector<int>::iterator iter= vec1.begin(); //making an iterator named iter and pointing it to the start of vector
-    // // vec1.insert(iter,555); //now as iter points to start of list 555 gets inserted at the start
+    // // vec1.insert(iter,555); //now as iter points to start of vector 555 gets inserted at the start
     // // vec1.insert(iter+1,555); // 555 gets inserted at the start+1 position 
-    // vec1.insert(iter+1,5,555); // inserts 5 copies of 555 at the start+1 position 
+    // vec1.insert(iter,5,555); // inserts 5 copies of 555 at the start+1 position 
     // cout<<"New list"<<endl;
     // display1(vec1);
 
@@ -811,6 +811,12 @@ int main()
     // int value = numbers30.at(2);  // Access the element at index 2 (30)
     // std::cout << "Value at index 2: " << value << std::endl;
 
+    // std::vector<int> vec = {1, 2, 3};
+    // vec.insert(vec.begin(), 0);       // Inserts 0 at the beginning
+    // vec.insert(vec.end(), 4);         // Inserts 4 at the end
+    // vec.insert(vec.begin() + 2, 100); // Inserts 100 at index 2
+    // cout << "Vector after insertion: ";
+    // display1(vec);
 
     //-------------------------------------------------------------------------------
     // List
