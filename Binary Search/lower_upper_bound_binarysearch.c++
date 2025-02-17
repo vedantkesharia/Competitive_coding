@@ -13,7 +13,7 @@ using namespace std;
 
 int lowerbound(vector<int> &nums, int target){
     int low = 0;
-    int high = nums.size();
+    int high = nums.size()-1;
     int ans = nums.size();
     while(low<=high){
         int mid = (low+high)/2;
@@ -29,7 +29,7 @@ int lowerbound(vector<int> &nums, int target){
 
 int upperbound(vector<int> &nums, int target){
     int low = 0;
-    int high = nums.size();
+    int high = nums.size()-1;
     int ans = nums.size();
     while(low<=high){
         int mid = (low+high)/2;
