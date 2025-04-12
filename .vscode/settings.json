@@ -65,6 +65,8 @@
         "xtree": "cpp",
         "xutility": "cpp",
         "unordered_set": "cpp",
-        "climits": "cpp"
+        "climits": "cpp",
+        "set": "cpp",
+        "string": "cpp"
     }
 }
