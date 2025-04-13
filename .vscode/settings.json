@@ -67,6 +67,7 @@
         "unordered_set": "cpp",
         "climits": "cpp",
         "set": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "sstream": "cpp"
     }
 }
