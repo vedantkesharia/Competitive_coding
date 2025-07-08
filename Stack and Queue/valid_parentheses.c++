@@ -25,6 +25,7 @@ public:
                 st.pop();
                 if((s[i]==')'&& c =='(')||(s[i]==']'&& c =='[')||(s[i]=='}'&& c =='{')){
                     // If there is nothing between the curly braces, it means that there is no action to be taken when the condition is true. It's a way of saying "if this condition is true, do nothing.
+                    continue;
                 }
                 else{
                     return false;
