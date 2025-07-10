@@ -18,7 +18,7 @@ public:
         stack <int> st;
         int maxA = 0;
         int n = heights.size();
-      for (int i = 0; i <= n; i++) {
+        for (int i = 0; i <= n; i++) {
         while (!st.empty() && (i == n || heights[st.top()] >= heights[i])) {
           int height = heights[st.top()];
           st.pop();
