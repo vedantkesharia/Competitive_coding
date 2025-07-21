@@ -1,3 +1,27 @@
+#include <iostream>
+#include <vector>
+#include <list>
+#include <map>
+#include <functional>
+#include <algorithm>
+#include <iomanip>
+#include <climits>
+#include <unordered_set>
+#include <unordered_map>
+#include <string>
+#include <queue>
+
+using namespace std;
+
+struct ListNode
+{
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
@@ -21,3 +45,14 @@ public:
         return dummy->next;
     }
 };
+
+
+
+
+
+
+
+
+
+
+
