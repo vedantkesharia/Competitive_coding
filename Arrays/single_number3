@@ -1,0 +1,56 @@
+#include <stack>
+#include <iostream>
+#include <vector>
+#include <list>
+#include <map>
+#include <functional>
+#include <algorithm>
+#include <iomanip>
+
+using namespace std;
+
+
+class Solution {
+public:
+    vector<int> singleNumber(vector<int>& nums) {
+        unordered_map<int, int> freq;
+
+        for (int num : nums) {
+            freq[num]++;
+        }
+
+        vector<int> ans;
+        for (auto &it : freq) {
+            if (it.second == 1) {
+                ans.push_back(it.first);
+            }
+        }
+
+        return ans;
+    }
+};
+
+
+// class Solution {
+// public:
+//     vector<int> singleNumber(vector<int>& nums) {
+//         int xorAll = 0;
+//         for (int num : nums) {
+//             xorAll ^= num;
+//         }
+
+//         // Rightmost set bit
+//         int diffBit = xorAll & (-xorAll);
+
+//         int a = 0, b = 0;
+//         for (int num : nums) {
+//             if (num & diffBit)
+//                 a ^= num;
+//             else
+//                 b ^= num;
+//         }
+
+//         return {a, b};
+//     }
+// };
+
