@@ -20,12 +20,12 @@ public:
         unordered_map<int, int> freq;
         vector<int> result;
 
-        // Count elements of nums1
+        
         for (int num : nums1) {
             freq[num]++;
         }
 
-        // Check elements of nums2
+        
         for (int num : nums2) {
             if (freq[num] > 0) {
                 result.push_back(num);
